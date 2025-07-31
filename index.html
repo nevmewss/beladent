@@ -7,8 +7,8 @@
 		<link rel="preload" href="./assets/fonts/VelaSans-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 		<link rel="shortcut icon" href="assets/img/favicon.ico">
 		<title>Home Page</title>
-		<script type="module" crossorigin="" src="./js/index.min.js?v=1753873966238"></script>
-		<link rel="stylesheet" crossorigin="" href="./css/index.min.css?v=1753873966238">
+		<script type="module" crossorigin="" src="./js/index.min.js?v=1753945624294"></script>
+		<link rel="stylesheet" crossorigin="" href="./css/index.min.css?v=1753945624294">
 	</head>
 	<body>
 		<div class="wrapper">
@@ -65,7 +65,7 @@
 						<a data-fls-dynamic=".actions-header, 991, 2" href="#" class="actions-header__tg">
 							<img src="./assets/img/tg.svg" alt="Телеграм">
 						</a>
-						<a href="#" class="actions-header__button">Замовити дзвінок</a>
+						<button type="button" data-fls-popup-link="booking" class="actions-header__button">Замовити дзвінок</button>
 						<div class="actions-header__mob">
 							<div class="actions-header__item">
 								<div class="actions-header__labling">Адреса</div>
@@ -94,9 +94,9 @@
 							</div>
 						</div>
 					</div>
-					<a href="#" class="header__call">
+					<button type="button" data-fls-popup-link="booking" class="header__call">
 						<img src="./assets/img/phone.svg" alt="Замовити дзвінок">
-					</a>
+					</button>
 				</div>
 			</header>
 			<main class="page page--home">
@@ -109,7 +109,7 @@
 							</h2>
 							<h3 class="main__caption">Без болю. Без дискомфорту. З любов’ю до кожної дитини!</h3>
 							<a href="#" class="main__how">Дізнатися як це працює?</a>
-							<a href="#" class="main__button">Записатись на консультацію</a>
+							<button type="button" data-fls-popup-link="booking" class="main__button">Записатись на консультацію</button>
 						</div>
 						<div class="main__img">
 							<picture>
@@ -174,7 +174,7 @@
 									<div class="test-quiz__ask">3</div>
 									<div class="test-quiz__ask">4</div>
 								</div>
-								<form action="#" class="test-quiz__questions">
+								<form action="#" class="test-quiz__questions form">
 									<div class="test-quiz__step step-1">
 										<h3 class="test-quiz__option">Який варіант лікування ви б обрали?</h3>
 										<div class="test-quiz__cnt">
@@ -281,10 +281,10 @@
 													<input autocomplete="off" type="email" name="email" required placeholder="E-mail" class="test-quiz__input">
 												</label>
 												<label class="test-quiz__agree">
-													<input type="radio" name="agree" class="test-quiz__radio">
+													<input required type="radio" name="agree" class="test-quiz__radio">
 													<span>
-														Натискаючи кнопку, ви погоджуєтесь з умовами Політики
-                                            Конфіденційності
+														Натискаючи кнопку, ви погоджуєтесь з умовами
+														<a href="#">Політики Конфіденційності</a>
 													</span>
 												</label>
 												<button data-fls-button="" type="submit" class="test-quiz__send">Наслати дані</button>
@@ -313,7 +313,9 @@
 											з відповіддю — телефонуйте
 										</span>
 										<a href="#">
-											<img src="./assets/img/phone.svg" alt="Зателефонувати">
+											<picture>
+												<img alt="Зателефонувати" src="./assets/img/quiz/tel.webp">
+											</picture>
 										</a>
 									</div>
 									<div class="banner-quiz__numbers">
@@ -360,7 +362,7 @@
 									<div class="dantists__panel">
 										<div class="dantists__name">Козленко Олександра Валентинівна</div>
 										<div class="dantists__category">Дитячі лікарі -- стоматологи</div>
-										<a href="#" class="dantists__btn">Про лікаря</a>
+										<a href="#" data-fls-popup-link="doc_01" class="dantists__btn">Про лікаря</a>
 									</div>
 								</div>
 								<div class="dantists__content">
@@ -381,12 +383,12 @@
 							<div class="dantists__item">
 								<div class="dantists__img">
 									<picture>
-										<img alt="Image" src="./assets/img/dantists/01.webp">
+										<img alt="Image" src="./assets/img/dantists/02.webp">
 									</picture>
 									<div class="dantists__panel">
 										<div class="dantists__name">Потіха (Новак) Світлана Сергіївна</div>
 										<div class="dantists__category">Дитячі лікарі -- стоматологи</div>
-										<a href="#" class="dantists__btn">Про лікаря</a>
+										<button type="button" data-fls-popup-link="doc_02" class="dantists__btn">Про лікаря</button>
 									</div>
 								</div>
 								<div class="dantists__content">
@@ -418,7 +420,7 @@
 						</div>
 						<div class="sleep__wrapper">
 							<div class="sleep__video">
-								<iframe loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/4Fn_xcZIbEc?si=84ARrQFf4GNZmnfq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+								<iframe loading="lazy" width="560" height="315" data-src="https://www.youtube.com/embed/4Fn_xcZIbEc?si=84ARrQFf4GNZmnfq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 							</div>
 							<div class="sleep__content">
 								<h2 class="sleep__title">Що таке Медичний сон ?</h2>
@@ -490,7 +492,7 @@
 							</div>
 						</div>
 						<div class="safety__video">
-							<iframe width="560" height="315" src="https://www.youtube.com/embed/4Fn_xcZIbEc?si=v3iYDBrlwwpStnaZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+							<iframe width="560" height="315" data-src="https://www.youtube.com/embed/4Fn_xcZIbEc?si=v3iYDBrlwwpStnaZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 						</div>
 					</div>
 				</section>
@@ -669,10 +671,10 @@
 				<section class="page__videos videos">
 					<div class="videos__container">
 						<div class="videos__video">
-							<iframe width="560" height="315" src="https://www.youtube.com/embed/apff5WrGQwI?si=TAhrHedpSCAYvRaZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+							<iframe width="560" height="315" data-src="https://www.youtube.com/embed/apff5WrGQwI?si=TAhrHedpSCAYvRaZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 						</div>
 						<div class="videos__video">
-							<iframe width="560" height="315" src="https://www.youtube.com/embed/apff5WrGQwI?si=TAhrHedpSCAYvRaZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+							<iframe width="560" height="315" data-src="https://www.youtube.com/embed/apff5WrGQwI?si=TAhrHedpSCAYvRaZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 						</div>
 					</div>
 				</section>
@@ -1402,7 +1404,7 @@
 									<div class="contacts__text">Стоматологія працює з 09:00 до 17:00 Неділя ( вихідний)</div>
 								</div>
 								<div class="contacts__buttons">
-									<a href="#" class="contacts__button">Записатись на консультацію</a>
+									<button type="button" data-fls-popup-link="booking" class="contacts__button">Записатись на консультацію</button>
 									<a href="#" class="contacts__tg">
 										<img src="./assets/img/contacts/tg.svg" alt="Телеграм">
 									</a>
@@ -1415,6 +1417,215 @@
 					</div>
 				</section>
 			</main>
+			<div data-fls-popup="booking" aria-hidden="true" class="popup">
+				<div data-fls-popup-wrapper="" class="popup__wrapper">
+					<div data-fls-popup-body="" class="popup__body">
+						<button data-fls-popup-close="" type="button" class="popup__close">
+							<svg width="23" height="23" viewbox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path opacity="0.850056" d="M1.73333 1.48883L21.5469 21.0288" stroke="#979797" stroke-linecap="square"></path>
+								<path opacity="0.850056" d="M21.2667 1.48883L1.45309 21.0288" stroke="#979797" stroke-linecap="square"></path>
+							</svg>
+						</button>
+						<div data-fls-popup-content="" class="popup__text">
+							<div class="popup__booking booking">
+								<h2 class="booking__title">Будь ласка, для попереднього запису на консультацію залиште свої контактні дані</h2>
+								<form action="#" class="booking__form form">
+									<label class="booking__label">
+										<span>Введіть Імʼя</span>
+										<input name="name" placeholder="Імʼя" type="text" class="booking__input" required>
+									</label>
+									<label class="booking__label">
+										<span>Введіть номер телефону</span>
+										<input name="tel" placeholder="+380(_ _) ___-__-__" type="tel" class="booking__input" required>
+									</label>
+									<label class="booking__agree">
+										<input required type="radio" name="agree" class="booking__radio">
+										<span>
+											Натискаючи кнопку, ви погоджуєтесь з умовами
+											<a href="#">Політики Конфіденційності</a>
+										</span>
+									</label>
+									<button data-fls-button="" type="submit" class="booking__btn">Записатись на консультацію</button>
+								</form>
+								<div class="booking__img">
+									<picture>
+										<img alt="Image" src="./assets/img/booking/booking.webp">
+									</picture>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div data-fls-popup="doc_01" aria-hidden="true" class="popup">
+				<div data-fls-popup-wrapper="" class="popup__wrapper">
+					<div data-fls-popup-body="" class="popup__body body_doc">
+						<button data-fls-popup-close="" type="button" class="popup__close">
+							<svg width="23" height="23" viewbox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path opacity="0.850056" d="M1.73333 1.48883L21.5469 21.0288" stroke="#979797" stroke-linecap="square"></path>
+								<path opacity="0.850056" d="M21.2667 1.48883L1.45309 21.0288" stroke="#979797" stroke-linecap="square"></path>
+							</svg>
+						</button>
+						<div data-fls-popup-content="" class="popup__text">
+							<div class="popup__doc doc">
+								<div class="doc__img">
+									<picture>
+										<img alt="Image" src="./assets/img/pop_dantists/01.webp">
+									</picture>
+									<button type="button" data-fls-popup-link="booking" class="doc__btn">Записатись на консультацію</button>
+								</div>
+								<div class="doc__content">
+									<h2 class="doc__title">Дитячий лікар-стоматолог</h2>
+									<div class="doc__desctiption">
+										Мене звати Козленко Олександра Валентинівна, я — дитячий лікар-стоматолог клініки BELADENT.
+                            Я щиро вірю, що перше знайомство дитини зі стоматологом має бути м’яким, спокійним і
+                            приємним — саме тому на кожному прийомі я створюю атмосферу довіри, турботи та підтримки.
+                            Моє головне завдання — не лише якісно вилікувати зубки, а й допомогти дитині подолати страх,
+                            відчути себе в безпеці та сформувати позитивне ставлення до стоматологічної допомоги на все
+                            життя. У своїй практиці я працюю як з найменшими пацієнтами від 1 року, так і з дітьми
+                            старшого віку.
+									</div>
+									<div class="doc__vect">
+										<div class="doc__item">
+											<div class="doc__label">
+												<img src="./assets/img/pop_dantists/vect.svg" alt="Image">
+												Основні напрямки моєї роботи:
+											</div>
+											<div class="doc__list">
+												<li>Профілактичні огляди дітей від 1 року</li>
+												<li>Лікування карієсу молочних та постійних зубів</li>
+												<li>Лікування пульпіту та періодонтиту</li>
+												<li>Пломбування кореневих каналів молочних зубів</li>
+												<li>Фторування та герметизація фісур</li>
+												<li>Формування гігієнічних звичок і навчання правильному догляду за зубами</li>
+											</div>
+											<div class="doc__info">
+												Я переконана, що здоров’я порожнини рота в дитинстві — це не лише запорука красивої
+                                    усмішки, а й фундамент міцного здоров’я дитини загалом. У BELADENT ми робимо все,
+                                    щоб маленькі пацієнти йшли на прийом із посмішкою, а батьки — з упевненістю у
+                                    правильному виборі.
+											</div>
+										</div>
+										<div class="doc__item">
+											<div class="doc__label">
+												<img src="./assets/img/pop_dantists/edu.svg" alt="Image">
+												Освіта:
+											</div>
+											<div class="doc__info">
+												Свою стоматологічну освіту я здобула у Національному медичному університеті імені О.
+                                    О. Богомольця (м. Київ), який закінчила у 2021 році.
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div data-fls-popup="doc_02" aria-hidden="true" class="popup">
+				<div data-fls-popup-wrapper="" class="popup__wrapper">
+					<div data-fls-popup-body="" class="popup__body body_doc">
+						<button data-fls-popup-close="" type="button" class="popup__close">
+							<svg width="23" height="23" viewbox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path opacity="0.850056" d="M1.73333 1.48883L21.5469 21.0288" stroke="#979797" stroke-linecap="square"></path>
+								<path opacity="0.850056" d="M21.2667 1.48883L1.45309 21.0288" stroke="#979797" stroke-linecap="square"></path>
+							</svg>
+						</button>
+						<div data-fls-popup-content="" class="popup__text">
+							<div class="popup__doc doc">
+								<div class="doc__img">
+									<picture>
+										<img alt="Image" src="./assets/img/pop_dantists/02.webp">
+									</picture>
+									<button type="button" data-fls-popup-link="booking" class="doc__btn">Записатись на консультацію</button>
+								</div>
+								<div class="doc__content">
+									<h2 class="doc__title">Дитячий лікар-стоматолог</h2>
+									<div class="doc__desctiption">
+										Вже понад 7 років я працюю дитячим стоматологом, і для мене це не просто робота, а
+                            покликання. Кожен рік я вдосконалюю свої навички, опановую новітні методики, аби кожне
+                            лікування було максимально комфортним, безболісним і навіть приємним для дитини. У дитячій
+                            стоматології головне — не лише полікувати зубки, а й зберегти довіру маленького пацієнта. Це
+                            можливо лише з любов’ю, терпінням і щирою турботою. Я вірю, що кожна дитина заслуговує на
+                            лагідне та уважне ставлення. Тому в моїй роботі головне — не лише результат, а й тепла
+                            атмосфера, яка формує правильне уявлення про стоматологію на все життя.
+									</div>
+									<div class="doc__vect">
+										<div class="doc__item">
+											<div class="doc__label">
+												<img src="./assets/img/pop_dantists/vect.svg" alt="Image">
+												Основні напрямки моєї роботи:
+											</div>
+											<div class="doc__list">
+												<li>Лікую дітей з перших років життя до підліткового віку</li>
+												<li>
+													Маю досвід роботи з дітьми з особливими потребами — як у кріслі, так і в умовах
+                                        медикаментозного сну
+												</li>
+												<li>
+													Співпрацювала з іноземними сім’ями та володію навичками адаптації дитини до
+                                        лікування без мовного бар’єру
+												</li>
+												<li>
+													Працюю виключно з якісними, сучасними матеріалами, перевіреними на безпеку для
+                                        дітей
+												</li>
+												<li>
+													Проводжу естетичне та функціональне відновлення зубів— від мікрореставрацій до
+                                        встановлення коронок
+												</li>
+												<li>
+													Виконую лікування та видалення зубів під седацією та наркозом, що дозволяє
+                                        проводити складні маніпуляції без болю й стресу
+												</li>
+											</div>
+										</div>
+										<div class="doc__item">
+											<div class="doc__label">
+												<img src="./assets/img/pop_dantists/edu.svg" alt="Image">
+												Освіта:
+											</div>
+											<div class="doc__info">
+												У 2019 році я завершила навчання в Національному медичному університеті імені О.О.
+                                    Богомольця, і відтоді присвятила себе найчарівнішому напрямку в медицині — лікуванню
+                                    дітей.
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div data-fls-popup="thx" aria-hidden="true" class="popup">
+				<div data-fls-popup-wrapper="" class="popup__wrapper">
+					<div data-fls-popup-body="" class="popup__body">
+						<button data-fls-popup-close="" type="button" class="popup__close">
+							<svg width="23" height="23" viewbox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path opacity="0.850056" d="M1.73333 1.48883L21.5469 21.0288" stroke="#979797" stroke-linecap="square"></path>
+								<path opacity="0.850056" d="M21.2667 1.48883L1.45309 21.0288" stroke="#979797" stroke-linecap="square"></path>
+							</svg>
+						</button>
+						<div data-fls-popup-content="" class="popup__text">
+							<div class="popup__thx thx">
+								<div class="thx__text">
+									<h2 class="thx__title">Дякуємо!</h2>
+									<h3 class="thx__subtitle">
+										Ваші дані успішно надіслані. Впродовж години з вами зв’яжеться наш адміністратор.
+									</h3>
+								</div>
+								<div class="thx__img">
+									<picture>
+										<img alt="Image" src="./assets/img/thx/thx.webp">
+									</picture>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 			<footer data-fls-footer="" class="footer">
 				<div class="footer__container">
 					<a href="#" class="footer__logo">
